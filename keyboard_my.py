@@ -55,7 +55,8 @@ def sound_piano(whites, blacks): #피아노 소리 넣기
         blacks.append(mixer.Sound(f'assets\\notes\\{black_notes[i]}.wav')) #흑건에 소리넣기
     return whites, blacks
 def split_numbers(input_numbers):
-    return [int(digit) for digit in input_numbers]
+    split_space_numbers = input_numbers.split()
+    return [int(digit) for digit in split_space_numbers]
 '''
 # Play a sound
 piano_sounds[0].play()
